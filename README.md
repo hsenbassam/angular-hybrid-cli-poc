@@ -1,7 +1,8 @@
 # Angular Hybrid using Angular CLI
-# POC to setup ng cli with Angular 2+ and AngularJS
+## POC to setup ng cli with Angular 2+ and AngularJS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.  
+All you need to do is install the node modules by running `npm install`, then build the application by running `ng build`.  
 
 ## Development server
 
