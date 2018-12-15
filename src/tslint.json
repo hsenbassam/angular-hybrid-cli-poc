@@ -1,0 +1,89 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "arrow-parens": [false, "ban-single-arg-parens"],
+    "interface-name": [true, "never-prefix"],
+    // typescript-specific
+    "member-access": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-static-method",
+          "protected-static-method",
+          "private-static-method",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-reference": true,
+    "no-any": true,
+    "no-magic-numbers": true,
+    // style
+    "only-arrow-functions": [
+      true,
+      "allow-declarations"
+    ],
+    "ordered-imports": false,
+    // maintainability
+    "eofline": false,
+    "indent": [
+      true,
+      "tabs"
+    ],
+    "object-literal-sort-keys": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    // functionality
+    "curly": true,
+    "no-unused-variable": true,
+    "no-var-keyword": true,
+    "no-console": [
+      true,
+      "log",
+      "error"
+    ],
+    "triple-equals": [
+      true,
+      "allow-undefined-check",
+      "allow-null-check"
+    ],
+    "radix": false,
+    "max-classes-per-file": [true, 15],
+    // style
+    "align": false,
+    "class-name": true,
+    "quotemark": [
+      false, // should be true, disable for now
+      "simple"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-trailing-underscore"
+    ]
+  },
+  "jsRules": {
+    "curly": true
+  },
+  "rulesDirectory": [
+  ]
+}
